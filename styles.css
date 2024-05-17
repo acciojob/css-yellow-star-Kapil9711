@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    padding:50px;
+}
+.star{
+    display: inline-block;
+    position: relative;
+}
+
+.triangle{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(50% 0 ,50% 0, 100% 100%, 0% 100% );
+}
+
+.triangle.reverse{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 35px;
+}
