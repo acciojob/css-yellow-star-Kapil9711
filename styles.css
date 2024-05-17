@@ -1,4 +1,3 @@
-/*  your css code here. If applicable */
 *{
     margin:0;
     padding:0;
@@ -7,21 +6,24 @@
 body{
     padding:50px;
 }
+.star-wrapper{
+    position: relative;
+}
 .star{
+   display: inline-block;
+    position: relative;
+    border-bottom:100px solid rgb(255, 255, 0);
+   border-left: 50px solid rgba(0, 0, 0, 0);
+   border-right: 50px solid rgba(0, 0, 0, 0);
+   position: absolute;
+}
+.star-reverse{
+    position: absolute;
+    top:30px;
     display: inline-block;
     position: relative;
-	 border-color:  rgb(255, 255, 0);
-}
-
-.triangle{
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-    clip-path: polygon(50% 0 ,50% 0, 100% 100%, 0% 100% );
-}
-
-.triangle.reverse{
-    transform: rotate(180deg);
-    position: absolute;
-    top: 35px;
+    /* border-bottom:100px solid rgb(255, 255, 0); */
+    border-top:100px solid rgb(255, 255, 0);
+   border-left: 50px solid rgba(0, 0, 0, 0);
+   border-right: 50px solid rgba(0, 0, 0, 0);
 }
